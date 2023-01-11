@@ -9,6 +9,14 @@ public class Main {
         task7();
         task8();
         task9();
+        task10();
+        task11();
+        task12();
+        task13();
+        task14();
+        task15();
+        task16();
+        task17();
     }
 
     public static void task1 () {
@@ -82,4 +90,106 @@ public class Main {
             System.out.println(a+"*"+i+"="+b);
         }
     }
+    public static void task10 () {
+        System.out.println("Часть 2.Задача 1");
+        int deposit=15000;
+        int total=0;
+        int month=0;
+        while (total<=2_459_000){
+            total=total+deposit;
+            month++;
+            System.out.println("Месяц "+month+", сумма накоплений равна "+total+" рублей");
+        }
+
+    }
+    public static void task11 () {
+        System.out.println("Часть 2.Задача 2");
+        int c=0;
+        while(c<10){
+            c++;
+            System.out.print(c+" ");
+        }
+        System.out.println();
+        for(int i=10;i>0;i=i-1){
+            System.out.print(i+" ");
+        }
+        System.out.println();
+
+    }
+    public static void task12 () {
+        System.out.println("Часть 2.Задача 3");
+        int population=12_000_000;
+        int natality=17*(population/1000);
+        int mortalitiRate=8*(population/1000);
+        int i=0;
+        while(i<10){
+            i++;
+            population=population+natality-mortalitiRate;
+            System.out.println("Год "+i+", численность населения составляет "+population);
+        }
+
+
+    }
+    public static void task13 () {
+        System.out.println("Часть 2.Задача 4");
+        int deposit = 15000;
+        int total = 0;
+        int month = 0;
+        while (total <= 12_000_000) {
+            total =(int)(total + total * 0.07);
+            total = total + deposit;
+            month++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+        }
+    }
+    public static void task14 () {
+        System.out.println("Часть 2.Задача 5");
+        int deposit = 15000;
+        int total = 0;
+        int month = 0;
+        while (total <= 12_000_000) {
+            total =(int)(total + total * 0.07);
+            total = total + deposit;
+            month++;
+            if(month%6==0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+            }
+        }
+    }
+    public static void task15 () {
+        System.out.println("Часть 2.Задача 6");
+        int deposit = 15000;
+        int total = 0;
+        int month = 0;
+        while (month <= 108) {
+            total = (int) (total + total * 0.07);
+            total = total + deposit;
+            month++;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+            }
+        }
+    }
+        public static void task16 () {
+            System.out.println("Часть 2.Задача 7");
+            int firstFriday=6;
+            while(firstFriday<=31){
+                System.out.println("Сегодня пятница, "+firstFriday+"-е число. Необходимо подготовить отчет");
+                firstFriday=firstFriday+7;
+
+            }
+
+            }
+    public static void task17 () {
+        System.out.println("Часть 2.Задача 8");
+        int start=1823;
+        while(start<=2123){
+            start++;
+            if(start%79==0) {
+                System.out.println(start);
+            }
+        }
+
+    }
+
 }
